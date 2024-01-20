@@ -1,0 +1,3 @@
+./spark-submit --jars ../../../rapids-4-spark_2.12-23.10.0.jar --conf spark.plugins=com.nvidia.spark.SQLPlugin \
+--conf spark.rapids.sql.concurrentGpuTasks=2 --conf spark.rapids.sql.exec.CollectLimitExec=true \
+/home/sid/Documents/PythonProjects/SparkTwitter/gpu/spark_gpus.py
